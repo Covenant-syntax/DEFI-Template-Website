@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary-blue: #00dBff;
+  --primary-purple: #6a00ff;
+}
+
+.blue {
+  color: var(--primary-blue);
+}
+
+@layer base {
+  *{
+    @apply font-[Kanit]
+  }
+  h1{
+    @apply text-3xl font-bold
+  }
+  li {
+    @apply text-white p-4 
+  }
+
+  button {
+    @apply bg-gradient-to-r from-[var(--primary-blue)] to-[var(--primary-purple)] rounded-full py-3 px-8 text-white 
+  }
+}
